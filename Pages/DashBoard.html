@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/StyleDash.css">
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="About">
+        <div id="us">
+            <h1>ABOUT US</h1>
+            <section>
+                <h2>Our Studio</h2>
+                <p>We are a game development studio that specializes in creating PC games on the Roblox platform. We are passionate about creating innovative and collaborative games that push the limits of graphics and gameplay mechanics. Our team is made up of talented and experienced game developers who share a common goal of creating the best gaming experiences for our players.</p>
+            </section>
+            <section>
+                <h2>Our Games</h2>
+                <p>We have created several games on the Roblox platform, including Twisted Mansion, which won the Roblox game jam. Twisted Mansion is a horror game where players have to escape a haunted mansion by solving puzzles and avoiding ghostly creatures. We also have a game called Cube's Adventures, which is a 3D platformer game where players control a cube character and explore a vibrant world filled with obstacles and challenges.</p>
+            </section>
+            <section>
+                <h2>Our Philosophy</h2>
+                <p>At Game Development Studio, we believe that innovation and collaboration are key to creating great games. We are constantly experimenting with new game mechanics and graphics techniques to create unique and engaging experiences for our players. We also believe that collaboration is essential to the game development process, and we work closely with our team members, as well as our players, to create games that everyone can enjoy.</p>
+            </section>
+        </div>
+        <div class="team-section">
+            <div class="team-container">
+                <h2 class="team">Our team</h2>
+                <div class="team-member" data-id="1" onclick="showEmployeeDetails(this)">
+                    <img src="../Images/Emp1.png" alt="Employee 1">
+                    <div class="info">
+                        <h3>Ofc_Infinitybad</h3>
+                        <p>Technical Lead</p>
+                    </div>
+                </div>
+                <div class="team-member" data-id="2" onclick="showEmployeeDetails(this)">
+                    <img src="../Images/Emp2.png" alt="Employee 2">
+                    <div class="info">
+                        <h3>Fun1892</h3>
+                        <p>Creative Lead</p>
+                    </div>
+                </div>
+                <!-- Duplicate the 'team-member' div and change the data-id, image source, name, and position for each team member -->
+            </div>
+            <div class="employee-details"></div>
+        </div>
+        <template id="employee-details-template">
+            <div class="employee-details-content">
+                <h2>Name</h2>
+                <h4>Position</h4>
+                <p class="story">Employee story...</p>
+                <div class="Links">
+                    <a href="#" class="button" target="_blank">
+                        <img src="../Images/roblox-logo.png" alt="Button Image">
+                    </a>                                                                         
+                </div>
+            </div>
+        </template>
+    </div>
+    <div id="Games">
+        <h1 style="text-align: center;">GAMES</h1>
+        <div class="image-container">
+            <a href="page1.html" class="image-link">
+                <img src="../Images/Twisted.png" alt="Image 1">
+                <div class="overlay">
+                    <span>Learn More</span>
+                </div>
+            </a>
+            <a href="page2.html" class="image-link">
+                <img src="../Images/Cube.png" alt="Image 2">
+                <div class="overlay">
+                    <span>Learn More</span>
+                </div>
+            </a>
+            <a href="page3.html" class="image-link">
+                <img src="../Images/Lumber.png" alt="Image 3">
+                <div class="overlay">
+                    <span>Learn More</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="Contact">
+        <h1 style="text-align: center;">Contact us</h1>
+          <div class="Links socials">
+            <a href="https://www.roblox.com/groups/11930319/Northworld-Studios" target="_blank">
+              <div class="socials-button">
+                <img src="../Images/roblox-logo.png" alt="Roblox">
+              </div>
+            </a>
+            <a href="https://twitter.com/NorthworldOfc" target="_blank">
+              <div class="socials-button">
+                <img src="../Images/Twitter.png" alt="Twitter">
+              </div>
+            </a>
+            <a href="https://discord.gg/77kqU9wrD2" target="_blank">
+              <div class="socials-button">
+                <img src="../Images/dis.png" alt="Discord">
+              </div>
+            </a>
+          </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#About">About Us</a></li>
+            <li><a href="#Games">Games</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>&copy; 2023 Northworld Studio. All rights reserved.</p>
+    </footer>
+    <script src="../Scripts/JsDash.js"></script>
+</body>
+</html>
